@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Website Desa Tegal Kecamatan Kemang Kabupaten Bogor</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap">
-    <link rel="stylesheet" href="/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="/css/aos.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/animate.min.css">
-    <link rel="stylesheet" href="/css/Articles-Cards-images.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/img/logo_pemkab_bogor.png">
+    <%- include('partials/head') %>
+    <title>Website Desa Tegal - Kecamatan Kemang Kabupaten Bogor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
-
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <div class="floating-socials">
         <a href="https://facebook.com/" target="_blank" class="social-icon facebook">
@@ -34,60 +20,12 @@
             <i class="fab fa-tiktok"></i>
         </a>
     </div>
-    <section id="header"  style="margin-top: -100px; padding-top: 100px;padding-bottom:0px">
+    <section id="header" style="margin-top: -100px; padding-top: 100px;padding-bottom:0px">
         <header class="masthead">
             <div class="overlay">
                 <div class="container" id="header">
                     <div class="intro-text">
-                        <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav" style="color: rgb(255,131,131);background: #072e48;border-color: var(--bs-code-color);--bs-primary: #221e12;--bs-primary-rgb: 34,30,18;">
-                            <div class="container">
-                                <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-                                <div class="d-flex align-items-center">
-                                    <img id="navLogo" class="img-fluid" src="/img/logo_pemkab_bogor.png" width="40" height="40">
-                                    <div class="ms-2 nav-text-container">
-                                        <div id="navTextTop">KECAMATAN KEMANG</div>
-                                        <div id="navTextBottom">KABUPATEN BOGOR</div>
-                                    </div>
-                                </div>
-                                <div class="collapse navbar-collapse" id="navbarResponsive">
-                                    <ul class="navbar-nav ms-auto text-uppercase">
-                                        <li class="nav-item dropdown profile-dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;">
-                                                Profil Desa
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="/sejarah" data-target="sejarah">Sejarah Desa</a></li>
-                                                <li><a class="dropdown-item" href="/visimisi" data-target="visimisi">Visi dan Misi</a></li>
-                                                <li><a class="dropdown-item" href="/struktur" data-target="struktur">Struktur Organisasi</a></li>
-                                                <li><a class="dropdown-item" href="/demografi" data-target="demografi">Demografi</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link" href="#header">Beranda</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#kegiatan">Kegiatan</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
-                                        <% if (isAdmin) { %>
-                                          <li class="nav-item dropdown" id="adminDropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                              Admin
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmin">
-                                              <li><a class="dropdown-item" href="/admin/dashboard">Dashboard</a></li>
-                                              <li><a class="dropdown-item" href="/admin/logout">Logout</a></li>
-                                            </ul>
-                                          </li>
-                                        <% } else { %>
-                                          <li class="nav-item" id="loginButton">
-                                            <a class="nav-link" href="#" id="adminLoginBtn">
-                                              <i class="fas fa-key"></i>
-                                            </a>
-                                          </li>
-                                        <% } %>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
+                        <%- include('partials/navbar') %>
                         <div class="intro-heading"><span>D</span><span>E</span><span>S</span><span>A</span> <span>T</span><span>E</span><span>G</span><span>A</span><span>L</span></div>
                         <div class="intro-lead-in"><span>Kecamatan Kemang, Kabupaten Bogor</span></div>
                     </div>

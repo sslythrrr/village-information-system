@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+<head>
+    <%- include('partials/head') %>
+    <title>Website Desa Tegal - Kecamatan Kemang Kabupaten Bogor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+    <div class="floating-socials">
+        <a href="https://facebook.com/" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/pemerintah_desa_tegal/" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://tiktok.com/" target="_blank" class="social-icon tiktok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+    
+    <section id="header" style="margin-top: -100px; padding-top: 100px;padding-bottom:0px">
+        <header class="masthead">
+            <div class="overlay">
+                <div class="container" id="header">
+                    <div class="intro-text">
+                        <%- include('partials/navbar') %>
+                        <div class="intro-heading"><span>D</span><span>E</span><span>S</span><span>A</span> <span>T</span><span>E</span><span>G</span><span>A</span><span>L</span></div>
+                        <div class="intro-lead-in"><span>Kecamatan Kemang, Kabupaten Bogor</span></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>

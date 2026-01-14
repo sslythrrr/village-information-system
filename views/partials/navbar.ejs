@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-shrink" id="mainNav" style="color: rgb(255,131,131);background: #072e48;border-color: var(--bs-code-color);--bs-primary: #221e12;--bs-primary-rgb: 34,30,18;">
+    <div class="container">
+        <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="d-flex align-items-center">
+            <img id="navLogo" class="img-fluid" src="/img/logo_pemkab_bogor.png" width="40" height="40">
+            <div class="ms-2 nav-text-container">
+                <div id="navTextTop">KECAMATAN KEMANG</div>
+                <div id="navTextBottom">KABUPATEN BOGOR</div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto text-uppercase">
+                <li class="nav-item dropdown profile-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;">
+                        Profil Desa
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/sejarah">Sejarah Desa</a></li>
+                        <li><a class="dropdown-item" href="/visimisi">Visi dan Misi</a></li>
+                        <li><a class="dropdown-item" href="/struktur">Struktur Organisasi</a></li>
+                        <li><a class="dropdown-item" href="/demografi">Demografi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/#header">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#kegiatan">Kegiatan</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#layanan">Layanan</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#berita">Berita</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#lokasi">Lokasi</a></li>
+                <% if (isAdmin) { %>
+                <li class="nav-item dropdown" id="adminDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmin">
+                        <li><a class="dropdown-item" href="/admin/dashboard">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="/admin/logout">Logout</a></li>
+                    </ul>
+                </li>
+                <% } else { %>
+                <li class="nav-item" id="loginButton">
+                    <a class="nav-link" href="#" id="adminLoginBtn">
+                        <i class="fas fa-key"></i>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
